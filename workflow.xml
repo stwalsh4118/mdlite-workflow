@@ -21,6 +21,11 @@
              help='Cluster to run simulation. Select a resource from drop down menu.'
              hideUserWorkspace='true'>
       </param>
+      <param name='Dynamic Slurm Partitions'
+             type="dynamicPartitionDropdown"
+             width="50%_none"
+             help="Select a partition from the drop down menu.">
+       </param>
       <param name='nports' 
              label='Number of Ports to Reserve' 
              type='hidden' value='2' width='50%_none'>
