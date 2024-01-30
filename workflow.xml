@@ -21,10 +21,12 @@
              help='Cluster to run simulation. Select a resource from drop down menu.'
              hideUserWorkspace='true'>
       </param>
-      <param name='Dynamic Slurm Partitions'
+      <param name='slurm_partition'
+             label='Dynamic SLURM Partition'
              type="dynamicPartitionDropdown"
              width="50%_none"
-             help="Select a partition from the drop down menu.">
+             help="Select a partition from the drop down menu."
+             depends_on="pwrl_sim_host.resource">
        </param>
       <param name='nports' 
              label='Number of Ports to Reserve' 
