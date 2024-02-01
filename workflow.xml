@@ -28,6 +28,12 @@
              help="Select a partition from the drop down menu."
              depends_on="pwrl_sim_host.resource">
        </param>
+       <param name='group'
+             label='Dynamic Group Dropdown'
+             type="dynamicGroupDropdown"
+             width="50%_none"
+             help="Select a group from the drop down menu.">
+       </param>
       <param name='nports' 
              label='Number of Ports to Reserve' 
              type='hidden' value='2' width='50%_none'>
