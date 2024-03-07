@@ -22,7 +22,7 @@
              hideUserWorkspace='true'>
       </param>
       <param name='slurm_partition'
-             label='Dynamic SLURM Partition'
+             label='Dynamic Partition Dropdown'
              type="dynamicPartitionDropdown"
              width="50%_none"
              help="Select a partition from the drop down menu."
