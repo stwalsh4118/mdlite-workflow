@@ -26,7 +26,7 @@
              type="dynamicPartitionDropdown"
              width="50%_none"
              help="Select a partition from the drop down menu."
-             depends_on="pwrl_sim_host.resource">
+             resource="pwrl_sim_host.resource">
        </param>
        <param name='team'
              label='Dynamic Team Dropdown'
