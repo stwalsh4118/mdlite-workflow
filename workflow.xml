@@ -21,13 +21,6 @@
              help='Cluster to run simulation. Select a resource from drop down menu.'
              hideUserWorkspace='true'>
       </param>
-      <param name='slurm_partition'
-             label='Dynamic Partition Dropdown'
-             type="dynamicPartitionDropdown"
-             width="50%_none"
-             help="Select a partition from the drop down menu."
-             resource="pwrl_sim_host.resource">
-       </param>
        <param name='team'
              label='Dynamic Team Dropdown'
              type="dynamicTeamDropdown"
@@ -63,6 +56,7 @@
             <option value="CONTROLLER">Controller</option>
             <option value="SLURM" selected="true">SLURM Partition</option>
             <option value="PBS">PBS Queue</option>
+              <option value="DYNAMIC_SLURM">Dynamic SLURM Partition</option>
         </param>
         <when value="SLURM">
           <param name='_parsl_provider_partition' 
@@ -108,6 +102,15 @@
                  help='e.g. -l mem=1000;-l nodes=1:ppn=4 - Use the semicolon character ; to separate parameters. Do not include the PBS keyword.' 
                  value='-l walltime=01:00:00;-l nodes=1;-l naccesspolicy=SINGLEJOB -n' width='100%_none'>
           </param>
+        </when>
+        <when value="DYNAMIC_SLURM">
+              <param name='slurm_partition'
+                     label='Dynamic Partition Dropdown'
+                     type="dynamicPartitionDropdown"
+                     width="50%_none"
+                     help="Select a partition from the drop down menu."
+                     resource="pwrl_sim_host.resource">
+              </param>
         </when>
       </conditional>
     </section>
