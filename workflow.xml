@@ -19,7 +19,7 @@
              type='computeResource'
              width='50%_none%'
              help='Cluster to run simulation. Select a resource from drop down menu.'
-             hideUserWorkspace='true'>
+             hideDisconnectedResources='false'>
       </param>
        <param name='team'
              label='Dynamic Team Dropdown'
