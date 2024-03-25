@@ -27,13 +27,6 @@
              width="50%_none"
              help="Select a team from the drop down menu.">
        </param>
-       <param name='account'
-              label='Dynamic Account Dropdown'
-              type="dynamicAccountDropdown"
-              width="50%_none"
-              help="Select an account from the drop down menu."
-              resource="pwrl_sim_host.resource">
-        </param>
        <param name='partition'
               label='Dynamic Partition Dropdown'
               type="dynamicPartitionDropdown"
