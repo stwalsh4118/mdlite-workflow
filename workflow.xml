@@ -1,6 +1,9 @@
 <tool id='mdlite_id' name='mdlite_name'>
   <command interpreter='bash'>workflow.sh</command>
   <inputs>
+    <param name='number_testing'
+    label='testing number input'
+    type='number'></param>
     <param name='pw_conda_yaml' 
            label='PW Conda YAML Definition File' type='hidden' 
            value='./requirements/conda_env_local.yaml' width='50%_none'>
