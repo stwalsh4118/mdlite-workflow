@@ -54,6 +54,33 @@
               account="pwrl_sim_host.account"
               partition="pwrl_sim_host.partition">
         </param>
+        <param name='account_non_dependent'
+              label='Dynamic Account Dropdown Non Dependent'
+              type="dynamicAccountDropdown"
+              width="50%_none"
+              help="Select an account from the drop down menu."
+              resource="pwrl_sim_host.resource"
+              dependent="false">
+        </param>
+       <param name='partition_non_dependent'
+              label='Dynamic Partition Dropdown Non Dependent'
+              type="dynamicPartitionDropdown"
+              width="50%_none"
+              help="Select a partition from the drop down menu."
+              resource="pwrl_sim_host.resource"
+              account="pwrl_sim_host.account"
+              dependent="false">
+        </param>
+       <param name='qos_non_dependent'
+              label='Dynamic QOS Dropdown Non Dependent'
+              type="dynamicQOSDropdown"
+              width="50%_none"
+              help="Select a QOS from the drop down menu."
+              resource="pwrl_sim_host.resource"
+              account="pwrl_sim_host.account"
+              partition="pwrl_sim_host.partition"
+              dependent="false">
+        </param>
       <param name='nports' 
              label='Number of Ports to Reserve' 
              type='hidden' value='2' width='50%_none'>
