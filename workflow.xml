@@ -37,14 +37,12 @@
               help="Select an account from the drop down menu."
               resource="pwrl_sim_host.resource">
         </param>
-       <param name='partition'
-              label='Dynamic Partition Dropdown'
-              type="dynamicPartitionDropdown"
-              width="50%_none"
-              help="Select a partition from the drop down menu."
-              resource="pwrl_sim_host.resource"
-              account="pwrl_sim_host.account">
-        </param>
+        <param
+              name='_sch__dd_partition_e_'
+              label='SLURM partition'
+              type='hidden'
+              value='service'
+      ></param>
        <param name='qos'
               label='Dynamic QOS Dropdown'
               type="dynamicQOSDropdown"
@@ -52,7 +50,7 @@
               help="Select a QOS from the drop down menu."
               resource="pwrl_sim_host.resource"
               account="pwrl_sim_host.account"
-              partition="pwrl_sim_host.partition">
+              partition="pwrl_sim_host._sch__dd_partition_e_">
         </param>
         <param name='account_non_dependent_v2'
               label='Dynamic Account Dropdown Non Dependent'
