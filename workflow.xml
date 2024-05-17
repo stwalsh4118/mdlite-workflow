@@ -39,7 +39,7 @@
         </param>
         <param
               name='_sch__dd_partition_e_'
-              label='SLURM partition'
+              label='SLURM partition default'
               type='text'
               value='service'
               default='service'
