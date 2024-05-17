@@ -40,8 +40,9 @@
         <param
               name='_sch__dd_partition_e_'
               label='SLURM partition'
-              type='hidden'
+              type='text'
               value='service'
+              disabled='true'
       ></param>
        <param name='qos'
               label='Dynamic QOS Dropdown'
