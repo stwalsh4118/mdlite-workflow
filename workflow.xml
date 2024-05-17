@@ -43,7 +43,7 @@
               type='select'
               width='50%_none' multiple='false'
       >
-            <option value="service">Service</option>
+            <option value="batch">batch</option>
       </param>
        <param name='qos'
               label='Dynamic QOS Dropdown'
