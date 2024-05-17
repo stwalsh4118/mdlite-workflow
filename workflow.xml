@@ -42,6 +42,7 @@
               label='SLURM partition'
               type='text'
               value='service'
+              default='service'
               disabled='true'
       ></param>
        <param name='qos'
