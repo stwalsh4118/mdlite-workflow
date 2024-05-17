@@ -39,8 +39,9 @@
         </param>
         <param
               name='_sch__dd_partition_e_'
-              label='SLURM partition default'
+              label='SLURM partition default dropdown'
               type='select'
+              width='50%_none' multiple='false'
       >
             <option value="service">Service</option>
       </param>
