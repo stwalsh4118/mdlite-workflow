@@ -40,11 +40,13 @@
         <param
               name='_sch__dd_partition_e_'
               label='SLURM partition default'
-              type='text'
+              type='select'
               value='service'
               default='service'
               disabled='true'
-      ></param>
+      >
+            <option value="service">Service</option>
+      </param>
        <param name='qos'
               label='Dynamic QOS Dropdown'
               type="dynamicQOSDropdown"
