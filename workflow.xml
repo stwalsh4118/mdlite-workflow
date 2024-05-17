@@ -41,9 +41,6 @@
               name='_sch__dd_partition_e_'
               label='SLURM partition default'
               type='select'
-              value='service'
-              default='service'
-              disabled='true'
       >
             <option value="service">Service</option>
       </param>
